@@ -1,3 +1,11 @@
+3proxy (0.8.12-2) xenial; urgency=medium
+
+  * Added the systemd service file
+  * Fixed the description
+  * Added the config example
+
+ -- Artyom Aleksyuk <artyom.h31@gmail.com>  Sun, 22 Apr 2018 01:52:17 +0300
+
 3proxy (0.8.12-1) xenial; urgency=medium
 
   * Initial release.

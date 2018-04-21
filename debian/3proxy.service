@@ -1,0 +1,18 @@
+[Unit]
+Description=3proxy
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/3proxy /etc/3proxy/3proxy.cfg
+User=nobody
+Group=nogroup
+Restart=on-failure
+ProtectHome=true
+ProtectSystem=strict
+PrivateUsers=true
+# Logging directory
+#ReadWritePaths=/tmp
+
+[Install]
+WantedBy=multi-user.target
