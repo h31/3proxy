@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --buildsystem=makefile
+
+override_dh_auto_build:
+	$(MAKE) -f Makefile.Linux
+
+override_dh_auto_clean:
+	find src/ -maxdepth 1 -type f -executable -delete
+	find src/ -type f -name "*.o" -delete
+	find src/ -type f -name "Makefile.var" -delete
+
+override_dh_auto_install:
+	$(MAKE) -f Makefile.Linux DESTDIR=$$(pwd)/debian/3proxy ETCDIR=$$(pwd)/debian/3proxy/etc/3proxy prefix=/usr install

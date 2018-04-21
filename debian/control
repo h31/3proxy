@@ -1,0 +1,12 @@
+Source: 3proxy
+Maintainer: Artyom Aleksyuk <artyom.h31@gmail.com>
+Section: net
+Priority: optional
+Standards-Version: 3.9.7
+Build-Depends: debhelper (>= 9)
+
+Package: 3proxy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: greet user
+ hithere greets the user, or the world.
