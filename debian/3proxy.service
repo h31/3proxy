@@ -11,9 +11,6 @@ Restart=on-failure
 ProtectHome=true
 ProtectSystem=full
 PrivateUsers=true
-# Logging directory
-ReadWritePaths=/tmp
-ReadWritePaths=/var/log
 
 [Install]
 WantedBy=multi-user.target
