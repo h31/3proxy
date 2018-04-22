@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: 3proxy
+Upstream-Contact: Vladimir '3APA3A' Dubrovin <3proxy@3proxy.ru>
+Source: https://3proxy.ru/
+
+Files: *
+Copyright: 2017, Vladimir '3APA3A' Dubrovin <3proxy@3proxy.ru>
+License: BSD-3-clause or Apache or GPL-2+ or LGPL-2.1
+
+Files: debian/*
+Copyright: 2018, Artyom Aleksyuk <artyom.h31@gmail.com>
+License: BSD-3-clause

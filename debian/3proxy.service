@@ -9,10 +9,11 @@ User=nobody
 Group=nogroup
 Restart=on-failure
 ProtectHome=true
-ProtectSystem=strict
+ProtectSystem=full
 PrivateUsers=true
 # Logging directory
-#ReadWritePaths=/tmp
+ReadWritePaths=/tmp
+ReadWritePaths=/var/log
 
 [Install]
 WantedBy=multi-user.target

@@ -17,7 +17,5 @@ override_dh_auto_clean:
 
 override_dh_auto_install:
 	$(MAKE) -f Makefile.Linux DESTDIR=$(_DESTDIR) ETCDIR=$(_DESTDIR)/etc/3proxy prefix=/usr install
-	iconv -f KOI8-R -t UTF-8 doc/ru/example1.txt | awk '/---3proxy.cfg/{flag=1;next}/---/{flag=0}flag' | sed 's/setuid/#setuid/g' | sed 's/setgid/#setgid/g' > $(_DESTDIR)/etc/3proxy/3proxy.cfg.simple-example
 	sed 's/\/usr\/local/\/usr/g' cfg/3proxy.cfg.sample > cfg/3proxy.cfg.example
 	chmod +x cfg/3proxy.cfg.example
-	
